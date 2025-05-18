@@ -1,0 +1,13 @@
+#content-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13em;
+    gap: 1em;
+    width: 53%;
+}
+
+#link {
+    color: var(--red-300);
+    font-size: 1.3em;
+}

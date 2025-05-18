@@ -1,6 +1,7 @@
 import {StrictMode} from "react";
 import {createBrowserRouter, Link, RouterProvider} from "react-router";
 import Home from "./pages/home";
+import Error404Page from "./pages/404";
 const router = createBrowserRouter([
   {
     path: '/asb-gradba-redisign/',
@@ -9,10 +10,7 @@ const router = createBrowserRouter([
   {
     path: '*',
     element: 
-    <div>
-      <h1>404 Page Not Found</h1>
-      <Link to="/">Go To Home</Link>
-    </div>
+    <Error404Page />
   }
 ])
 
