@@ -1,0 +1,102 @@
+form {
+    background-color: var(--blue-300);
+    border-radius: 10px;
+    width: 30%;
+    min-height: 60%;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.15);
+    /* gpt */
+    padding-bottom: 2em;
+    align-items: stretch;
+}
+
+h2 {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 5px solid white;
+    box-sizing: border-box;
+}
+
+.section-v {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 0.5em;
+    padding-left: 3em;
+}
+
+.section-h {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em 2em;
+}
+
+input {
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  width: 15em;
+  font-size: 12px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+label {
+    font-size: 24px;
+}
+
+
+
+.password-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+#vis-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url('./visibility.svg');
+    width: 24px;
+    height: 24px;
+    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15); */
+}
+
+#vis-off-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-image: url('./visibility_off.svg');
+    width: 24px;
+    height: 24px;
+    /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15); */
+}
+
+#login-btn, #register-btn {
+    font-size: 22px;
+    padding: 0.75em;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#login-btn {
+    background-color: var(--red-300);
+    color: white;
+}
+
+#register-btn {
+    background-color: var(--yellow-200);
+    color: black;
+}

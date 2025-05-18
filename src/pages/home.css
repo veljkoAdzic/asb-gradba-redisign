@@ -1,0 +1,26 @@
+body {
+    background: url('./home-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 70%;
+    background-position-x: right;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(1.2966rad, white 0%, white 57%, transparent 57%, transparent 100%);
+    z-index: -1;
+}
+
+#content {
+    height: calc(100vh - 50px);
+    padding-left: 5%;
+    display: flex
+;
+    align-items: center;
+}
