@@ -3,7 +3,7 @@ import {createBrowserRouter, Link, RouterProvider} from "react-router";
 import Home from "./pages/home";
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/asb-gradba-redisign/',
     element: <Home />
   },
   {
