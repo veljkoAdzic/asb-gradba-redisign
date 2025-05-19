@@ -1,0 +1,43 @@
+body {
+    background: #f1f9ff;;
+}
+
+body:before {
+    content: none;
+}
+
+#sidebar {
+    width: 15%;
+    height: 100%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.tab {
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+    padding: 0.7em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    
+    transition-duration: 0.2s;
+}
+
+.tab:hover {
+    background-color: #d4d4d4;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(72, 72, 72, 0.15);
+}
+
+.tab.here {
+    background-color: #aac3da;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.15);
+}

@@ -1,0 +1,21 @@
+#dash-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div#body {
+    display: flex;
+    
+    width: 100%;
+    flex-grow: 1;
+}
+
+#dashboard-page {
+    flex-grow: 1;
+    background-color: #e2ebf3;;
+}

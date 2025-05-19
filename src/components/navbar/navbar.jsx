@@ -5,7 +5,7 @@ import '../../global.css'
 export default function NavBar(){
     return (
         <nav>
-            <Link to="/asb-gradba-redisign/" id="home-link" />
+            <Link to="/asb-gradba-redisign/" id="home-link" replace />
         </nav>
     );
 }

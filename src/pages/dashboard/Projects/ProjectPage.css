@@ -1,0 +1,39 @@
+#header {
+    border-bottom: 2px solid var(--yellow-300);
+    background-color: #f1f9ff;
+    padding: 0.7em 1em;
+    width: 100%;
+    box-sizing: border-box;
+    
+    display: flex;
+    gap: 40%;
+    align-items: baseline;
+    
+    font-size: 1.1rem;
+}
+
+#header-text {
+    font-size: 1.5em;
+}
+
+#add-btn {
+    
+    border: none;
+    outline: none;
+    
+    background-color: var(--yellow-200);
+    color: white;
+    font-size: 1em;
+    padding: 0.7em 1em;
+
+    border-radius: 3px;
+
+    box-shadow: 1px 1px 4px rgba(0,0,0, 0.15);
+    transition-duration: 0.2s;
+}
+
+#add-btn:hover {
+    box-shadow: 3px 3px 4px rgba(0,0,0, 0.15);
+    scale: 1.05;
+    cursor: pointer;
+}

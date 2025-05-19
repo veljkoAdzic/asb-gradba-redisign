@@ -1,11 +1,16 @@
 import {StrictMode} from "react";
 import {createBrowserRouter, Link, RouterProvider} from "react-router";
-import Home from "./pages/home";
-import Error404Page from "./pages/404";
+import Home from "./pages/home/home";
+import Error404Page from "./pages/404/404";
+import Dashboard from "./pages/dashboard/Dashboard";
 const router = createBrowserRouter([
   {
     path: '/asb-gradba-redisign/',
     element: <Home />
+  },
+  {
+    path: '/asb-gradba-redisign/dashboard',
+    element: <Dashboard />
   },
   {
     path: '*',
