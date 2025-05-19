@@ -1,0 +1,116 @@
+.user-section {
+    padding: 0.7em 3em;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    font-size: 1.1rem;
+
+    flex-grow: 1;
+}
+
+.user-section:first-of-type {
+    background-color: #f1f9ff;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.user-section:nth-of-type(n+3) {
+    border-top: 1px solid #dbdcef;
+}
+
+#user-pfp-wraper {
+    border-radius: 50%;
+    border: 3px solid var(--blue-300);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-pfp {
+    width: 128px;
+    aspect-ratio: 1/1;
+    background-color: #97c8ad;
+    background-image: url("./user-pfp-2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+.user-inputs-area {
+    /* background-color: pink; */
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1em;
+    width: 40%;
+}
+
+.user-section input {
+    font-size: 1.1rem;
+    /* min-width: 17em; */
+}
+
+#save-data-btn {
+    font-size: 1.1rem;
+    padding: 1em 1.3em;
+    cursor: pointer;
+    background-color: var(--green-200);
+    color: white;
+    border-radius: 0.7em;
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+    transition-duration: 0.2s;
+    margin-left: 1em;
+    margin-top: 0.7em;
+}
+
+#save-data-btn:hover, #save-data-btn:focus {
+    background-color: var(--green-300);
+    scale: 1.05;
+}
+
+#logout-btn {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.7em 1.3em;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: var(--red-300);
+    border-radius: 0.7em;
+    border: 5px solid var(--red-300);
+    outline: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+    transition-duration: 0.2s;
+    margin-left: 1em;
+}
+
+
+#logout-btn:hover, #logout-btn:focus {
+    background-color: var(--red-300);
+    color: white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#password-reset-btn {
+    font-size: 1.1rem;
+    padding: 1em 1.3em;
+    cursor: pointer;
+    background-color: var(--yellow-200);
+    color: white;
+    border-radius: 0.7em;
+    border: none;
+    outline: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+    transition-duration: 0.2s;
+    margin-left: 1em;
+    margin-top: 0.7em;
+}
+
+#password-reset-btn:hover, #password-reset-btn:focus {
+    background-color: var(--yellow-300);
+    scale: 1.05;
+}

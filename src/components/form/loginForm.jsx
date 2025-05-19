@@ -1,7 +1,6 @@
 import './LoginForm.css';
 import '../../global.css';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { storeActiveUser, validateUser } from '../../utils/storage';
 
 export default function LoginForm(props){

@@ -89,14 +89,27 @@ label {
     outline: none;
     border-radius: 7px;
     cursor: pointer;
+    transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 #login-btn {
     background-color: var(--red-300);
     color: white;
 }
+#login-btn:hover, #login-btn:focus {
+    scale: 1.05;
+    background-color: var(--red-400);
+    color: #eee;
+}
 
 #register-btn {
     background-color: var(--yellow-200);
     color: black;
+}
+
+#register-btn:hover, #register-btn:focus {
+    scale: 1.05;
+    background-color: var(--yellow-300);
+    color: #111;
 }

@@ -32,7 +32,7 @@
     transition-duration: 0.2s;
 }
 
-#add-btn:hover {
+#add-btn:hover, #add-btn:focus {
     box-shadow: 3px 3px 4px rgba(0,0,0, 0.15);
     scale: 1.05;
     cursor: pointer;

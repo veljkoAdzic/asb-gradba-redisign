@@ -6,15 +6,16 @@ import "./Dashboard.css"
 
 import Projects from "./Projects/ProjectPage";
 import { getActiveUser } from "../../utils/storage";
+import User from "./User/UserPage";
 
 const DashPages = [
     (<Projects />),
     (<div>Inbox!</div>),
     (<div>Finance!</div>),
-    (<div>User!</div>),
+    // (<div>User!</div>),
     // (<Inbox />),
     // (<Finaces />),
-    // (<User />)
+    (<User />)
     ]
 
 export default function Dashboard() {

@@ -16,6 +16,9 @@ body:before {
     gap: 1em;
     padding: 1em;
     box-sizing: border-box;
+
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.05);
+    z-index: 12;
 }
 
 .tab {
