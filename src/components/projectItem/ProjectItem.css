@@ -1,0 +1,49 @@
+.project-item {
+    background-color: white;
+    font-size: 1rem;
+    padding: 1.5em;
+    border-radius: 1em;
+
+    min-width: 40em;
+    max-width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 4px 4px 7px rgba(0,0,0,0.15);
+}
+
+.project-item:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.project-name {
+    border-bottom: 2px solid var(--red-300);
+    width: 100%;
+    padding-bottom: 0.5em;
+}
+
+.project-details {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+span[class$="status"] {
+    font-weight: bold;
+}
+
+.denied-status {
+    color: var(--red-300);
+}
+
+.pending-status {
+    color: var(--yellow-300);
+}
+
+.active-status {
+    color: var(--green-300);
+}

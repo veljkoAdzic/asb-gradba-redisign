@@ -37,3 +37,24 @@
     scale: 1.05;
     cursor: pointer;
 }
+
+#content-view {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#dashboard-page {
+    display: flex;
+    flex-direction: column;
+}
+
+#list-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow-y: scroll;
+    padding: 2em 4em;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: start;
+}

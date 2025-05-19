@@ -1,12 +1,19 @@
-body {
+#background {
     background: url('./home-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 70%;
     background-position-x: right;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -10;
 }
 
-body::before {
+#background::before {
     content: '';
     position: absolute;
     top: 0;

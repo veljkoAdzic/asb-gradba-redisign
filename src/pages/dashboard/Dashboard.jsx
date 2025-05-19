@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import { useNavigate, Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import NavBar from "../../components/navbar/navbar";
 import SideBar from "../../components/sidebar/SideBar";
 import "./Dashboard.css"
 
 import Projects from "./Projects/ProjectPage";
+import { getActiveUser } from "../../utils/storage";
 
 const DashPages = [
     (<Projects />),
@@ -23,9 +24,9 @@ export default function Dashboard() {
     const [tab, setTab] = useState(0);
 
     useEffect( () => {
-        setUser( JSON.parse( sessionStorage.getItem("Active-User") ) )
+        setUser( getActiveUser()  )
         setChecked(true)
-        console.log("Dash: " + JSON.stringify(user))
+        // console.log("Dash: " + JSON.stringify(user))
     }, []);
 
     if(!checked) return <div>Loading...</div>;

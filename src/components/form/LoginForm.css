@@ -16,7 +16,7 @@ form {
     align-items: stretch;
 }
 
-h2 {
+#login-header {
     width: 100%;
     padding: 10px;
     text-align: center;

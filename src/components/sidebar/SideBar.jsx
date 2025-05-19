@@ -6,7 +6,7 @@ export default function SideBar(props) {
         <div id="sidebar">
             {
                 TABS.map( (title, i) => {
-                    return (<button onClick={ () => {props.onTabChange(i) }}  className={`tab  ${i==props.selectedTab ? " here" : ""}` } >
+                    return (<button key={"sidebar-"+i} onClick={ () => {props.onTabChange(i) }}  className={`tab  ${i==props.selectedTab ? " here" : ""}` } >
                         {title}
                     </button>);
                 })

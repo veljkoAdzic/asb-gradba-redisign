@@ -6,6 +6,7 @@ export default function Error404Page() {
 
     return (
         <>
+        <div id="background" />
         <NavBar />
         <div id="content-404">
             <h1>404 Страница не постои</h1>

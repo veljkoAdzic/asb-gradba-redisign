@@ -2,14 +2,14 @@ import './home.css';
 import NavBar from '../../components/navbar/navbar';
 import LoginForm from '../../components/form/loginForm';
 import { useEffect, useState } from 'react';
-import Dashboard from '../dashboard/Dashboard';
-import { useNavigate, Navigate } from 'react-router-dom';
+// import Dashboard from '../dashboard/Dashboard';
+import { Navigate } from 'react-router-dom';
 
 function Home() {
   const [user, setUser] = useState(null)
   const [checked, setChecked] = useState(false);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() =>{
       setUser( JSON.parse(sessionStorage.getItem("Active-User") ) );
@@ -25,6 +25,7 @@ function Home() {
   
   return (
     <>
+      <div id="background" />
       <NavBar />
       <div id="content">
           <LoginForm onLogin={(cred) => {setUser(cred)}} /> 
