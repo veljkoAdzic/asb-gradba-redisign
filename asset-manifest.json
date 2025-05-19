@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/asb-gradba-redisign/static/css/main.cba68b10.css",
-    "main.js": "/asb-gradba-redisign/static/js/main.ec3cd3b0.js",
+    "main.css": "/asb-gradba-redisign/static/css/main.a42ec135.css",
+    "main.js": "/asb-gradba-redisign/static/js/main.912e2b49.js",
     "static/js/453.adc34edb.chunk.js": "/asb-gradba-redisign/static/js/453.adc34edb.chunk.js",
     "static/media/home-bg.jpg": "/asb-gradba-redisign/static/media/home-bg.531c3c79cdd81d7b9ee5.jpg",
     "index.html": "/asb-gradba-redisign/index.html",
     "static/media/visibility_off.svg": "/asb-gradba-redisign/static/media/visibility_off.482e6942189469b57e77.svg",
     "static/media/visibility.svg": "/asb-gradba-redisign/static/media/visibility.4fba8cdbb8461c95200b.svg",
-    "main.cba68b10.css.map": "/asb-gradba-redisign/static/css/main.cba68b10.css.map",
-    "main.ec3cd3b0.js.map": "/asb-gradba-redisign/static/js/main.ec3cd3b0.js.map",
+    "main.a42ec135.css.map": "/asb-gradba-redisign/static/css/main.a42ec135.css.map",
+    "main.912e2b49.js.map": "/asb-gradba-redisign/static/js/main.912e2b49.js.map",
     "453.adc34edb.chunk.js.map": "/asb-gradba-redisign/static/js/453.adc34edb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cba68b10.css",
-    "static/js/main.ec3cd3b0.js"
+    "static/css/main.a42ec135.css",
+    "static/js/main.912e2b49.js"
   ]
 }
