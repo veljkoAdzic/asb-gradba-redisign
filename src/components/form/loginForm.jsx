@@ -23,7 +23,7 @@ export default function LoginForm(props){
     }
 
     return (
-        <form>
+        <form id="login-form">
             <h2 id="login-header">е-Одобрение за градба</h2>
             <div class="section-v">
             <label htmlFor="username">Корисничко име:</label>

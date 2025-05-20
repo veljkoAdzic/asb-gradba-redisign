@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import Project from "../../../components/projectItem/ProjectItem";
 import './ProjectPage.css'
-import { getActiveUser, storeActiveUser } from "../../../utils/storage";
+import { getActiveUser } from "../../../utils/storage";
+import { useNavigate } from "react-router-dom";
 
 // function Project(props) {
 //     if(!props.data) return <></>;
@@ -14,6 +15,8 @@ import { getActiveUser, storeActiveUser } from "../../../utils/storage";
 export default function Projects() {
     const [loaded, setLoaded] = useState(false)
     const [projects, setProjects] = useState([])
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const user = getActiveUser(); //JSON.parse(sessionStorage.getItem("Active-User"))
@@ -31,16 +34,17 @@ export default function Projects() {
         <div id="header">
             <h4 id="header-text">Ваши градежни проекти</h4>
             <button id="add-btn" onClick={() => {
-                let pjcs = [...projects]
-                pjcs.push({
-                    name: "foo", 
-                    description: "lorem ipsum", 
-                    id: Math.floor(Math.random()*10000), 
-                    status: ["active", "pending", "denied"][ Math.floor( Math.random()*3 ) ] })
+                navigate("/asb-gradba-redisign/project/new")
+                // let pjcs = [...projects]
+                // pjcs.push({
+                //     name: "foo", 
+                //     description: "lorem ipsum", 
+                //     id: Math.floor(Math.random()*10000), 
+                //     status: ["active", "pending", "denied"][ Math.floor( Math.random()*3 ) ] })
                 
-                setProjects(pjcs);
-                const user = getActiveUser()
-                storeActiveUser({...user, projects})
+                // setProjects(pjcs);
+                // const user = getActiveUser()
+                // storeActiveUser({...user, projects})
                 
             }}>+ Додади</button>
         </div>

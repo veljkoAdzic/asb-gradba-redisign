@@ -30,7 +30,7 @@ export default function User(){
     if(!user) return (<div>Loading...</div>);
 
     return (
-        <>
+        <div className="scrollable">
         <div class="user-section">
             <div id="user-pfp-wraper">
                 <div id="user-pfp"></div>
@@ -70,6 +70,6 @@ export default function User(){
         <div className="user-section">
             <button id="logout-btn" type="button" onClick={Logout}>Одјава</button>
         </div>
-        </>
+        </div>
     );
 }

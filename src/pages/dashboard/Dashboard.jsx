@@ -18,7 +18,7 @@ const DashPages = [
     (<User />)
     ]
 
-export default function Dashboard() {
+export default function Dashboard({children}) {
     const [user, setUser] = useState(null);
     const [checked, setChecked] = useState(false)
 
@@ -41,11 +41,9 @@ export default function Dashboard() {
             <div id="body">
             <SideBar selectedTab={tab} onTabChange={(newTab) => {setTab(newTab)} }/>
             <div id="dashboard-page">
-                {DashPages[tab]}
+                {(children) ? children : DashPages[tab] }
             </div>
             </div>
-            {/* <div>Dashbord of {user ? user.username : "-"}</div>
-            <button onClick={() => {sessionStorage.clear(); setUser(null); }}>Log out</button> */}
         </div>
     );
 }

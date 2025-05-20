@@ -1,0 +1,43 @@
+#add-project-container {
+    /* background-color: red; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#add-project-header {
+    background-color: #f1f9ff;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 1em 6em;
+}
+
+.label-p {
+    font-size: 24px;
+}
+
+#radio-group {
+    display: grid;
+    grid-template-columns: 2em auto;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#radio-group > label {
+    font-size: 1.25rem;
+}
+
+form#add-project-form {
+    flex-grow: 1;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 3.5fr 5fr;
+    gap: 1em;
+    width: 50%;
+    align-items: baseline;
+}
+
+#add-project-container textarea {
+    height: 6em;
+    resize: vertical;
+}
